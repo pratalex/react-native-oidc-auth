@@ -1,0 +1,76 @@
+{
+  "name": "react-native-oidc-auth",
+  "version": "0.1.0",
+  "description": "Bare React Native implementation using react-native-app-auth and react-native-keychain.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "source": "src/index.ts",
+  "exports": {
+    ".": {
+      "source": "./src/index.tsx",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "targets": [
+    [
+      "module",
+      {
+        "esm": true
+      }
+    ],
+    "typescript"
+  ],
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && resolve-tspaths",
+    "prepack": "npm run build"
+  },
+  "peerDependencies": {
+    "axios": "*",
+    "react": "*",
+    "react-native": "*",
+    "react-native-app-auth": ">=8.0.0",
+    "react-native-keychain": ">=10.0.0"
+  },
+  "dependencies": {
+    "react-native-oidc-auth-core": "^0.1.0"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.27.1",
+    "@react-native-community/eslint-config": "^3.2.0",
+    "@react-native/babel-preset": "^0.80.2",
+    "@types/react": "~19.1.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.6.2",
+    "resolve-tspaths": "^0.8.23",
+    "typescript": "~5.9.2",
+    "axios": "^1.12.2",
+    "react": "19.1.0",
+    "react-native": "0.81.4",
+    "react-native-app-auth": "^8.0.3",
+    "react-native-keychain": "^10.0.0"
+  },
+  "keywords": [
+    "oauth2",
+    "oauth",
+    "oidc",
+    "openID connect",
+    "react native"
+  ],
+  "author": "Alexandre PRAT",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pratalex/react-native-oidc-auth.git",
+    "directory": "packages/react-native-oidc-auth"
+  },
+  "bugs": {
+    "url": "https://github.com/pratalex/react-native-oidc-auth/issues"
+  },
+  "gitHead": "216d5f6e61eeb6570b2dd1d766a69f3ca98a4243"
+}

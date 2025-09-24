@@ -1,0 +1,20 @@
+{
+  "name": "react-native-oidc-auth",
+  "version": "0.1.0",
+  "private": true,
+  "description": "OIDC authentication for React Native with shared core and ready-to-use implementations for Expo and Bare React Native.",
+  "workspaces": {
+    "packages": [
+      "packages/**"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pratalex",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^9.0.0"
+  }
+}

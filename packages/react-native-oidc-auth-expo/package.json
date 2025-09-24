@@ -1,0 +1,82 @@
+{
+  "name": "react-native-oidc-auth-expo",
+  "version": "0.1.0",
+  "description": "Expo implementation using expo-auth-session and expo-secure-store.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "source": "src/index.ts",
+  "exports": {
+    ".": {
+      "source": "./src/index.tsx",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "targets": [
+    [
+      "module",
+      {
+        "esm": true
+      }
+    ],
+    "typescript"
+  ],
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && resolve-tspaths",
+    "prepack": "npm run build",
+    "lint": "eslint . --fix"
+  },
+  "peerDependencies": {
+    "axios": "*",
+    "expo": "*",
+    "react": "*",
+    "react-native": "*"
+  },
+  "dependencies": {
+    "expo-auth-session": "~7.0.8",
+    "expo-crypto": "~15.0.7",
+    "expo-secure-store": "~15.0.7",
+    "react-native-oidc-auth-core": "^0.1.0"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "7.27.1",
+    "@react-native-community/eslint-config": "3.2.0",
+    "@react-native/babel-preset": "0.80.2",
+    "@types/react": "19.1.0",
+    "eslint": "9.37.0",
+    "eslint-config-expo": "10.0.0",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-prettier": "5.5.4",
+    "prettier": "3.6.2",
+    "resolve-tspaths": "0.8.23",
+    "typescript": "5.9.2",
+    "axios": "^1.12.2",
+    "expo": "~54.0.10",
+    "react": "19.1.0",
+    "react-native": "0.81.4"
+  },
+  "keywords": [
+    "oauth2",
+    "oauth",
+    "oidc",
+    "openID connect",
+    "react native",
+    "expo"
+  ],
+  "author": "Alexandre PRAT",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pratalex/react-native-oidc-auth.git",
+    "directory": "packages/react-native-oidc-auth-expo"
+  },
+  "bugs": {
+    "url": "https://github.com/pratalex/react-native-oidc-auth/issues"
+  },
+  "gitHead": "216d5f6e61eeb6570b2dd1d766a69f3ca98a4243"
+}
