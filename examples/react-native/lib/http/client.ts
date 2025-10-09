@@ -1,6 +1,6 @@
 import Axios from 'axios';
 import {API_URL} from '@env';
-import {configAxios} from 'react-native-oidc-auth-bare';
+import {configAxios} from 'react-native-oidc-auth';
 import {oidcAuth} from '../oidc-auth.ts';
 
 const axiosInstance = Axios.create({

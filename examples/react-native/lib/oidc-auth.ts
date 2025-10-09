@@ -3,7 +3,7 @@ import {
   createOidcAuth,
   OidcConfiguration,
   setTracingLogger,
-} from 'react-native-oidc-auth-bare';
+} from 'react-native-oidc-auth';
 import {
   OIDC_CLIENT_ID,
   OIDC_REALM,

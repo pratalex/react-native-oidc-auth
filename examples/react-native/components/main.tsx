@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
-import {useOidcAuth} from 'react-native-oidc-auth-bare';
+import {useOidcAuth} from 'react-native-oidc-auth';
 
 export const Main: React.FC = () => {
   const {isAuthenticated, user, login, logout} = useOidcAuth();

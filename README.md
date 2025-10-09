@@ -16,7 +16,7 @@
 - `react-native-oidc-auth-core`: framework-agnostic core with login, logout, refresh, and secure token storage
   contracts.
 - `react-native-oidc-auth-expo`: Expo implementation using expo-auth-session and expo-secure-store.
-- `react-native-oidc-auth-bare`: Bare React Native implementation using react-native-app-auth and react-native-keychain.
+- `react-native-oidc-auth`: Bare React Native implementation using react-native-app-auth and react-native-keychain.
 
 ---
 
@@ -70,7 +70,7 @@ npm i react-native-oidc-auth-expo
 Bare React Native apps:
 
 ```sh
-npm i react-native-oidc-auth-bare
+npm i react-native-oidc-auth
 ```
 
 ---
@@ -82,7 +82,7 @@ npm i react-native-oidc-auth-bare
 Configure your OIDC provider:
 
 ```ts
-import { createOidcAuth, type OidcConfiguration, setTracingLogger } from 'react-native-oidc-auth-bare'; // or react-native-oidc-auth-expo
+import { createOidcAuth, type OidcConfiguration, setTracingLogger } from 'react-native-oidc-auth'; // or react-native-oidc-auth-expo
 
 const issuer = `${OIDC_URL}/realms/${OIDC_REALM}`;
 
@@ -108,7 +108,7 @@ Wrap your app with the provider:
 
 ```tsx
 import React from 'react';
-import { OidcAuthProvider } from 'react-native-oidc-auth-bare'; // or react-native-oidc-auth-expo
+import { OidcAuthProvider } from 'react-native-oidc-auth'; // or react-native-oidc-auth-expo
 import { Main } from './components/main';
 import { oidcAuth } from './lib/oidc-auth';
 
@@ -128,7 +128,7 @@ Use the hook to access auth state and actions:
 ```tsx
 import React from 'react';
 import { View, Text, Button } from 'react-native';
-import { useOidcAuth } from 'react-native-oidc-auth-bare'; // or react-native-oidc-auth-expo
+import { useOidcAuth } from 'react-native-oidc-auth'; // or react-native-oidc-auth-expo
 
 export const Main: React.FC = () => {
   const { isAuthenticated, user, login, logout } = useOidcAuth();
@@ -178,7 +178,7 @@ const config: OidcConfiguration = {
 ```tsx
 import React from "react";
 import { View, Text, Button } from "react-native";
-import { useOidcAuth } from "react-native-oidc-auth-bare";
+import { useOidcAuth } from "react-native-oidc-auth";
 
 export const Main: React.FC = () => {
   const { isAuthenticated, login, register } = useOidcAuth();
