@@ -2,8 +2,12 @@
 
 > OIDC authentication for React Native with shared core and ready-to-use implementations for Expo and Bare React Native.
 
-[![License](https://img.shields.io/github/license/pratalex/react-native-oidc-auth.svg)](https://github.com/pratalex/react-native-oidc-auth/blob/master/LICENSE)
-[![Github Issues](https://img.shields.io/github/issues/pratalex/react-native-oidc-auth.svg)](https://github.com/pratalex/react-native-oidc-auth/issues)
+[![Npm](https://img.shields.io/npm/v/react-native-oidc-auth-core?label=npm%20%7C%20core)](https://www.npmjs.com/package/react-native-oidc-auth-core)
+[![Npm](https://img.shields.io/npm/v/react-native-oidc-auth?label=npm%20%7C%20native)](https://www.npmjs.com/package/react-native-oidc-auth)
+[![Npm](https://img.shields.io/npm/v/react-native-oidc-auth-expo?label=npm%20%7C%20expo)](https://www.npmjs.com/package/react-native-oidc-auth-expo)
+
+[![License](https://img.shields.io/github/license/pratalex/react-native-oidc-auth.svg?branch=master)](https://github.com/pratalex/react-native-oidc-auth/blob/master/LICENSE)
+[![Github Issues](https://img.shields.io/github/issues/pratalex/react-native-oidc-auth.svg?label=issues)](https://github.com/pratalex/react-native-oidc-auth/issues)
 
 ---
 
