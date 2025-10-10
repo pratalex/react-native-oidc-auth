@@ -1,6 +1,6 @@
 {
   "name": "react-native-oidc-auth-expo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Expo implementation using expo-auth-session and expo-secure-store.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -41,24 +41,24 @@
     "expo-auth-session": "~7.0.8",
     "expo-crypto": "~15.0.7",
     "expo-secure-store": "~15.0.7",
-    "react-native-oidc-auth-core": "^0.1.0"
+    "react-native-oidc-auth-core": "^0.1.1"
   },
   "devDependencies": {
     "@babel/preset-typescript": "7.27.1",
     "@react-native-community/eslint-config": "3.2.0",
     "@react-native/babel-preset": "0.80.2",
     "@types/react": "19.1.0",
+    "axios": "^1.12.2",
     "eslint": "9.37.0",
     "eslint-config-expo": "10.0.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-prettier": "5.5.4",
-    "prettier": "3.6.2",
-    "resolve-tspaths": "0.8.23",
-    "typescript": "5.9.2",
-    "axios": "^1.12.2",
     "expo": "~54.0.10",
+    "prettier": "3.6.2",
     "react": "19.1.0",
-    "react-native": "0.81.4"
+    "react-native": "0.81.4",
+    "resolve-tspaths": "0.8.23",
+    "typescript": "5.9.2"
   },
   "keywords": [
     "oauth2",
