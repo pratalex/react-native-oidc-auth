@@ -1,6 +1,7 @@
 import * as AuthSession from 'expo-auth-session';
 import {
   AuthRequest,
+  AuthSessionRedirectUriOptions,
   AuthSessionResult,
   DiscoveryDocument,
   makeRedirectUri,
@@ -192,11 +193,15 @@ export class OidcAuthExpo implements IAppAuth {
     } as AuthorizeResult;
   }
 
-  private async initializeAuthSession(config: AuthConfiguration) {
+  private async initializeAuthSession(
+    config: AuthConfiguration & {
+      redirectUriOptions?: AuthSessionRedirectUriOptions;
+    },
+  ) {
     const discoveryDocument = await this.fetchDiscoveryDocument();
 
     tracingLog.debug('[EXPO APP AUTH] load auth session with config');
-    const redirectUri = makeRedirectUri();
+    const redirectUri = makeRedirectUri(config.redirectUriOptions);
     tracingLog.debug('[EXPO APP AUTH] redirect uri: ', redirectUri);
     const authRequest = await AuthSession.loadAsync(
       {
