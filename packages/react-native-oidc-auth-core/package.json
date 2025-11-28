@@ -1,6 +1,6 @@
 {
   "name": "react-native-oidc-auth-core",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "dist/index.js",
   "description": "Framework-agnostic core with login, logout, refresh, and secure token storage contracts.",
   "types": "dist/index.d.ts",
