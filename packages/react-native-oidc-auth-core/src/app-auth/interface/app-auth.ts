@@ -7,23 +7,21 @@ import {LogoutConfiguration} from '@/app-auth/interface/logout-configuration';
 import {RefreshConfiguration} from '@/app-auth/interface/refresh-configuration';
 import {UserInfoConfiguration} from '@/app-auth/interface/user-info-configuration';
 
-export interface IAppAuth {
-  authorize(config: AuthConfiguration): Promise<AuthorizeResult>;
-
+export interface IAppAuth<
+  TAuthConfig extends AuthConfiguration = AuthConfiguration,
+> {
+  authorize(config: TAuthConfig): Promise<AuthorizeResult>;
   logout(
     config: EndSessionConfiguration,
     logoutConfig: LogoutConfiguration,
   ): Promise<void>;
-
   refresh(
-    config: AuthConfiguration,
+    config: TAuthConfig,
     refreshConfig: RefreshConfiguration,
   ): Promise<RefreshResult>;
-
   getUserInfo(config: UserInfoConfiguration): Promise<User>;
-
   register(
-    config: AuthConfiguration,
+    config: TAuthConfig,
     registrationPageEndpoint: string,
   ): Promise<AuthorizeResult>;
 }
