@@ -1,6 +1,6 @@
 {
-  "name": "react-native-oidc-auth",
-  "version": "0.1.0",
+  "name": "react-native-oidc-auth-root",
+  "version": "0.1.3",
   "private": true,
   "description": "OIDC authentication for React Native with shared core and ready-to-use implementations for Expo and Bare React Native.",
   "workspaces": {
@@ -18,5 +18,6 @@
   "dependencies": {},
   "devDependencies": {
     "lerna": "^9.0.0"
-  }
+  },
+  "packageManager": "yarn@3.8.7"
 }
