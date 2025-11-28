@@ -11,7 +11,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "publish-packages": "lerna publish",
-    "version-packages": "lerna version"
+    "version-packages": "lerna version",
+    "prepare": "tsc"
   },
   "author": "pratalex",
   "license": "MIT",
